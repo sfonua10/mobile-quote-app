@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Head from "next/head";
-import {getRandomInt} from '../utils/getRandomInt';
+import { getRandomInt } from '../utils/getRandomInt';
 
 export default function Home() {
   const colors = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
