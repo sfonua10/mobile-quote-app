@@ -12,7 +12,13 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        notoSerifTC: ['Noto Serif TC', 'system-ui'],
+        quickSand: ['Quicksand', 'system-ui'],
+        tangerine: ['Tangerine', 'system-ui']
+      }
+    },
   },
   variants: {
     extend: {},
