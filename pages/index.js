@@ -42,6 +42,7 @@ export default function Home() {
       <Head>
         <title>Quotes</title>
         <link rel="icon" href="/apple-touch-icon.png" />
+        <meta property="og:image" content="/look-up.png" />
       </Head>
 
       <main className={`flex bg-${randomColor}-200 h-screen content-center`}>
