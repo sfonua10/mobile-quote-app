@@ -6,6 +6,18 @@ export default function Home() {
   const colors = ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
   const quotes = [
     {
+      quote: 'I have been induced to write this history, to disabuse the public mind, and put all inquirers after truth in possession of the facts, as they have transpired, in relation both to myself and the Church, so far as I have such facts in my possession.',
+      source: 'JSH 1:1'
+    },
+    {
+      quote: 'If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him',
+      source: 'James 1:5'
+    },
+    {
+      quote: '“they draw near to me with their lips, but their hearts are far from me, they teach for doctrines the commandments of men, having a form of godliness, but they deny the power thereof.”',
+      source: 'Joseph Smith History 1:19'
+    },
+    {
       quote: '..whose eyes are upon all men;..',
       source: 'D&C 1:1'
     },
@@ -22,10 +34,7 @@ export default function Home() {
       source: 'President Russell M. Nelson'
     }
   ];
-  const [currentQuote, setCurrentQuote] = useState({
-    quote: 'CTR',
-    source: 'Bishop'
-  });
+  const [currentQuote, setCurrentQuote] = useState(quotes[0]);
   const [currentInd, setCurrentInd] = useState(0);
   const [randomColor, setRandomColor] = useState('blue');
   const nextQuote = () => {
