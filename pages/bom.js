@@ -17,30 +17,23 @@ export default function Home() {
   const quotes = [
     {
       quote:
-        "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him",
-      source: "James 1:5",
+        "Great and marvelous are they works, O Lord God Almighty! Thy throne is high in the heavens, and they power, and goodness, and mercy are over all the inhabitants of the earth; and, because thou are merciful, thou wilt not suffer those who come unto thee that they shall perish!",
+      source: "1 Nephi 1:14",
     },
     {
       quote:
-        "“they draw near to me with their lips, but their hearts are far from me, they teach for doctrines the commandments of men, having a form of godliness, but they deny the power thereof.”",
-      source: "Joseph Smith History 1:19",
-    },
-    {
-      quote: "..whose eyes are upon all men;..",
-      source: "D&C 1:1",
-    },
-    {
-      quote: "the voice of the Lord is unto all men, ...",
-      source: "D&C 1:2",
+        "his soul did rejoice, and his whole heart was filled, because of the things which he had seen, yeah, which the Lord had shown unto him.",
+      source: "1 Nephi 1:15",
     },
     {
       quote:
-        "...their iniquities shall be spoken upon the housetops, and their secret acts shall be revealed.",
-      source: "D&C 1:3",
+        "the tender mercies of the Lord are over all those whom he hath chosen, because of their faith, to make them mighty even unto the power of deliverance.",
+      source: "1 Nephi 1:20",
     },
     {
-      quote: "Let God Prevail",
-      source: "President Russell M. Nelson",
+      quote:
+        "the Lord spake unto my father, yea, even in a dream.. Blessed art thou Lehi, because of the things which thou hast done; and because thou has been faithful and declared unto this people the things which I commanded thee, behold, they seek to take away thy life.",
+      source: "1 Nephi 1:20",
     },
   ];
   const [currentQuote, setCurrentQuote] = useState(quotes[0]);
@@ -55,6 +48,7 @@ export default function Home() {
     setCurrentQuote(quotes[currentInd]);
     setRandomColor(colors[getRandomInt(colors.length)]);
   };
+  console.log("currentQuote", currentQuote.quote.split(" ").length);
   return (
     <>
       <Head>
@@ -63,11 +57,11 @@ export default function Home() {
         <meta property="og:image" content="/look-up.png" />
       </Head>
 
-      <main className={`flex bg-${randomColor}-200 h-screen content-center`}>
-        <div className="flex w-screen h-screen mx-8" onClick={nextQuote}>
+      <main className={`bg-${randomColor}-200`}>
+        <div className="flex h-screen mx-8" onClick={nextQuote}>
           <h1
-            className={`leading-tight uppercase text-gray-800 self-center ${
-              currentQuote.quote.split(" ").length >= 34
+            className={`leading-tight uppercase text-gray-800 text-right self-center ${
+              currentQuote.quote.split(" ").length >= 20
                 ? "text-2xl"
                 : "text-4xl"
             }`}
@@ -78,8 +72,8 @@ export default function Home() {
             <span className="text-3xl">--{currentQuote?.source}</span>
           </h1>
           <div className="self-end opacity-50">
-            <Link href="/bom">
-              <a>BOM</a>
+            <Link href="/">
+              <a>D&C</a>
             </Link>
           </div>
         </div>
