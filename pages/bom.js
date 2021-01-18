@@ -17,6 +17,16 @@ export default function Home() {
   const quotes = [
     {
       quote:
+        "I know that the Lord giveth no commandments unto the children of men, save he shall prepare a way for them that they may accomplish the thing which he commandeth them",
+      source: "1 Nephi 3:7",
+    },
+    {
+      quote:
+        "go, my son, and thou shalt be favored of the Lord, because thou hast not murmured",
+      source: "1 Nephi 3:6",
+    },
+    {
+      quote:
         "Great and marvelous are they works, O Lord God Almighty! Thy throne is high in the heavens, and they power, and goodness, and mercy are over all the inhabitants of the earth; and, because thou are merciful, thou wilt not suffer those who come unto thee that they shall perish!",
       source: "1 Nephi 1:14",
     },
@@ -34,6 +44,11 @@ export default function Home() {
       quote:
         "the Lord spake unto my father, yea, even in a dream.. Blessed art thou Lehi, because of the things which thou hast done; and because thou has been faithful and declared unto this people the things which I commanded thee, behold, they seek to take away thy life.",
       source: "1 Nephi 1:20",
+    },
+    {
+      quote:
+        "having great desires to know of the mysteries of God, wherefore, I did cry unto the Lord; and behold he did visit me, and did soften my heart..",
+      source: "1 Nephi 2:16",
     },
   ];
   const [currentQuote, setCurrentQuote] = useState(quotes[0]);
