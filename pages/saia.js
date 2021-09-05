@@ -7,7 +7,7 @@ import parse from "html-react-parser";
 export default function Saia() {
 
   const [currentQuote, setCurrentQuote] = useState({
-    word: "SIOSAIA FONUA",
+    word: "Saia Fonua",
     quote: "Know who I am",
     reference: "",
     source: "",
@@ -32,7 +32,7 @@ export default function Saia() {
         <link rel="icon" href="/apple-touch-icon.png" />
       </Head>
 
-      <main className="flex bg-white-300 h-screen font-notoSerifTC">
+      <main className="bg-white-300 h-screen font-notoSerifTC my-16">
         <div
           className="flex flex-col text-right self-center mx-8"
           onClick={nextQuote}
