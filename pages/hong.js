@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-const parse = require('html-react-parser');
+import parse from "html-react-parser";
 
 export default function Hong() {
   const quotes = [
@@ -11,13 +11,16 @@ export default function Hong() {
       source: "Joseph Smith Jr.",
     },
   ];
+
   const [currentQuote, setCurrentQuote] = useState({
     word: "HEARKEN",
-    quote: "<p>Hearken, <br />O Ye people of my church,<br />saith the voice of Him<br />who dwells on High,<br />and whose eyes are upon<br />all men; yea, verily I say:<br /><br />hearken ye people from afar;<br />and ye that are<br />upon the islands of the sea,<br />listen together.</p>",
+    quote: "<p>Hearken,</p> <p>O Ye people of my church,</p><p>saith the voice of Him<p>who dwells on High,</p><p>and whose eyes are upon</p><p>all men; yea, verily I say:</p><br /><p>hearken ye people from afar;</p><p>and ye that are upon the islands of the sea,</p><p>listen together.</p>",
     reference: "DOCTRINE AND COVENANTS 6:22-23",
     source: "Joseph Smith Jr.",
   });
+
   const [currentInd, setCurrentInd] = useState(0);
+
   const nextQuote = () => {
     setCurrentInd(currentInd + 1);
     if (currentInd === quotes.length - 1) {
@@ -27,7 +30,6 @@ export default function Hong() {
     setCurrentQuote(quotes[currentInd]);
   };
 
-  const testStr = `<p>Hello, World,\nand all you beautiful people in it!</p>`
   return (
     <>
       <Head>

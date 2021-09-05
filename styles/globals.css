@@ -5,3 +5,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+* 
+
+For CSS debugging purposes
+{ border: 1px solid red } */
