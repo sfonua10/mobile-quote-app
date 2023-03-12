@@ -88,7 +88,7 @@ export default function Home() {
           </h1>
           <div className="self-end opacity-50">
             <Link href="/">
-              <a>D&C</a>
+              D&C
             </Link>
           </div>
         </div>

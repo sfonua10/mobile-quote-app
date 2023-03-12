@@ -79,7 +79,7 @@ export default function Home() {
           </h1>
           <div className="self-end opacity-50">
             <Link href="/bom">
-              <a>BOM</a>
+              BOM
             </Link>
           </div>
         </div>
